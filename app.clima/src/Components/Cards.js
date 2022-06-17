@@ -53,10 +53,10 @@ const Cities = ({ cities }) => {
             <hr />
             <div className="lineaderecha">
               <div className="infolineader">
-                <span>Humedad</span>
+                <span>Viento</span>
               </div>
               <div className="templineader">
-                <span>{cities.humedad}</span>
+                <span>{cities.viento}</span>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Searchbar from "./Searchbar.js";
 import Cards from "./Cards.js";
 
-const apiKey = process.env.REACT_APP_API_KEY
+const apiKey = process.env.REACT_APP_API_KEY;
 
 function Api() {
   const [cities, setCities] = useState([]);
@@ -17,9 +17,10 @@ function Api() {
           const ciudad = {
             temperatura: Math.round(data.main.temp),
             nombre: data.name,
+            humedad: data.main.humidity,
             tempmax: Math.round(data.main.temp_max),
             tempmin: Math.round(data.main.temp_min),
-            humedad: data.main.humidity,
+            viento: data.wind.speed,
             icon: data.weather[0].icon,
             description: data.weather[0].description,
             pais: data.sys.country,
@@ -35,7 +36,6 @@ function Api() {
     <div>
       <Searchbar Busqueda={Busqueda}></Searchbar>
       <Cards cities={cities}></Cards>
-      {console.log(cities)}
     </div>
   );
 }
