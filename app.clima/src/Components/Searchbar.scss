@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+
+.backgroundmain {
+  width: 100%;
+  background: #1d2b64;
+  background: -webkit-linear-gradient(to top, #f8cdda, #1d2b64);
+  background: linear-gradient(to top, #f8cdda, #1d2b64);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.busqueda {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  padding: 40px 80px 40px;
+
+  .busquedaizq {
+    width: 50%;
+    height: 100%;
+
+    form {
+      height: 35px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 15px;
+
+      .icon {
+        background-color: rgb(245, 245, 245);
+        height: 35px;
+        padding: 0 10px 0 10px;
+        border-radius: 5px 0px 0 5px;
+        color: black;
+      }
+
+      .input {
+        background-color: rgb(245, 245, 245);
+        width: 90%;
+        height: 100%;
+        border: none;
+      }
+
+      .input:focus {
+        outline: none;
+      }
+      .equis {
+        color: white;
+        padding: 0px 10px;
+        height: 38px;
+        border: none;
+        font-size: 20px;
+        border-radius: 0px 5px 5px 0px;
+        background-color: rgba(138, 63, 199, 0.733);
+      }
+      .equis:hover {
+        transition: 0.4s;
+        background-color: rgb(95, 0, 95);
+        cursor: pointer;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-size: 15px;
+      font-family: "Hind Siliguri", sans-serif;
+      padding-bottom: 15px;
+    }
+  }
+  .busquedader {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.temporal {
+  width: 100%;
+  height: 1300px;
+}
+
+@media (max-width: 770px) {
+  .busqueda {
+    padding: 40px 50px 40px;
+
+    .busquedaizq {
+      width: 100%;
+
+      form {
+        height: 30px;
+
+        .input {
+          width: 100%;
+        }
+        .equis {
+          font-size: 15px;
+        }
+      }
+
+      h2 {
+        display: none;
+      }
+
+      .ultimasubicaciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+
+        .ciudad {
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .provincia {
+            font-size: 16px;
+            margin-right: 5px;
+          }
+          .pais {
+            font-size: 16px;
+            margin-right: 25px;
+          }
+          .gradoseicons {
+            font-size: 16px;
+            .temp {
+              font-size: 16px;
+            }
+
+            .icongrade {
+              font-size: 16px;
+            }
+          }
+
+          .realfel {
+            display: none;
+          }
+        }
+      }
+    }
+    .busquedader {
+      width: 0;
+    }
+  }
+}
